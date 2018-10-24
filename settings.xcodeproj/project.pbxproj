@@ -14,6 +14,12 @@
 		DD8468B421806DDE00506645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8468B221806DDE00506645 /* LaunchScreen.storyboard */; };
 		DD8468BF21806DDE00506645 /* settingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8468BE21806DDE00506645 /* settingsTests.swift */; };
 		DD8468CA21806DDE00506645 /* settingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8468C921806DDE00506645 /* settingsUITests.swift */; };
+		DD8468E02180700200506645 /* PickerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8468DE2180700200506645 /* PickerViewCell.swift */; };
+		DD8468E12180700200506645 /* PickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8468DF2180700200506645 /* PickerViewCell.xib */; };
+		DD8468E42180703300506645 /* OtherSettingsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8468E22180703300506645 /* OtherSettingsViewCell.swift */; };
+		DD8468E52180703300506645 /* OtherSettingsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8468E32180703300506645 /* OtherSettingsViewCell.xib */; };
+		DD8468E82180708500506645 /* SettingsViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8468E62180708500506645 /* SettingsViewControllerCollectionViewCell.swift */; };
+		DD8468E92180708500506645 /* SettingsViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8468E72180708500506645 /* SettingsViewControllerCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		DD8468C521806DDE00506645 /* settingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = settingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD8468C921806DDE00506645 /* settingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsUITests.swift; sourceTree = "<group>"; };
 		DD8468CB21806DDE00506645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD8468DE2180700200506645 /* PickerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewCell.swift; sourceTree = "<group>"; };
+		DD8468DF2180700200506645 /* PickerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewCell.xib; sourceTree = "<group>"; };
+		DD8468E22180703300506645 /* OtherSettingsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherSettingsViewCell.swift; sourceTree = "<group>"; };
+		DD8468E32180703300506645 /* OtherSettingsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherSettingsViewCell.xib; sourceTree = "<group>"; };
+		DD8468E62180708500506645 /* SettingsViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
+		DD8468E72180708500506645 /* SettingsViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,9 @@
 		DD8468A821806DDD00506645 /* settings */ = {
 			isa = PBXGroup;
 			children = (
+				DD8468D921806F5B00506645 /* Modelo */,
+				DD8468D821806EF200506645 /* SettingsViewController */,
+				DD8468D721806ED700506645 /* Cells */,
 				DD8468A921806DDD00506645 /* AppDelegate.swift */,
 				DD8468AB21806DDD00506645 /* ViewController.swift */,
 				DD8468AD21806DDD00506645 /* Main.storyboard */,
@@ -123,6 +138,49 @@
 				DD8468CB21806DDE00506645 /* Info.plist */,
 			);
 			path = settingsUITests;
+			sourceTree = "<group>";
+		};
+		DD8468D721806ED700506645 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DD8468DB21806FA400506645 /* CellPicker */,
+				DD8468DA21806F6C00506645 /* CellOtherSettings */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DD8468D821806EF200506645 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DD8468E62180708500506645 /* SettingsViewControllerCollectionViewCell.swift */,
+				DD8468E72180708500506645 /* SettingsViewControllerCollectionViewCell.xib */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		DD8468D921806F5B00506645 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		DD8468DA21806F6C00506645 /* CellOtherSettings */ = {
+			isa = PBXGroup;
+			children = (
+				DD8468E22180703300506645 /* OtherSettingsViewCell.swift */,
+				DD8468E32180703300506645 /* OtherSettingsViewCell.xib */,
+			);
+			path = CellOtherSettings;
+			sourceTree = "<group>";
+		};
+		DD8468DB21806FA400506645 /* CellPicker */ = {
+			isa = PBXGroup;
+			children = (
+				DD8468DE2180700200506645 /* PickerViewCell.swift */,
+				DD8468DF2180700200506645 /* PickerViewCell.xib */,
+			);
+			path = CellPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +287,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8468E12180700200506645 /* PickerViewCell.xib in Resources */,
 				DD8468B421806DDE00506645 /* LaunchScreen.storyboard in Resources */,
+				DD8468E92180708500506645 /* SettingsViewControllerCollectionViewCell.xib in Resources */,
 				DD8468B121806DDE00506645 /* Assets.xcassets in Resources */,
+				DD8468E52180703300506645 /* OtherSettingsViewCell.xib in Resources */,
 				DD8468AF21806DDD00506645 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD8468E42180703300506645 /* OtherSettingsViewCell.swift in Sources */,
 				DD8468AC21806DDD00506645 /* ViewController.swift in Sources */,
 				DD8468AA21806DDD00506645 /* AppDelegate.swift in Sources */,
+				DD8468E02180700200506645 /* PickerViewCell.swift in Sources */,
+				DD8468E82180708500506645 /* SettingsViewControllerCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
