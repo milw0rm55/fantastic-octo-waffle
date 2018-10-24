@@ -18,8 +18,9 @@
 		DD8468E12180700200506645 /* PickerViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8468DF2180700200506645 /* PickerViewCell.xib */; };
 		DD8468E42180703300506645 /* OtherSettingsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8468E22180703300506645 /* OtherSettingsViewCell.swift */; };
 		DD8468E52180703300506645 /* OtherSettingsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8468E32180703300506645 /* OtherSettingsViewCell.xib */; };
-		DD8468E82180708500506645 /* SettingsViewControllerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8468E62180708500506645 /* SettingsViewControllerCollectionViewCell.swift */; };
-		DD8468E92180708500506645 /* SettingsViewControllerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD8468E72180708500506645 /* SettingsViewControllerCollectionViewCell.xib */; };
+		DDC61C0921807378006CD3DC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C0721807378006CD3DC /* SettingsViewController.swift */; };
+		DDC61C0A21807378006CD3DC /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC61C0821807378006CD3DC /* SettingsViewController.xib */; };
+		DDC61C0C2180739C006CD3DC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC61C0B2180739C006CD3DC /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,8 +58,9 @@
 		DD8468DF2180700200506645 /* PickerViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PickerViewCell.xib; sourceTree = "<group>"; };
 		DD8468E22180703300506645 /* OtherSettingsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherSettingsViewCell.swift; sourceTree = "<group>"; };
 		DD8468E32180703300506645 /* OtherSettingsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherSettingsViewCell.xib; sourceTree = "<group>"; };
-		DD8468E62180708500506645 /* SettingsViewControllerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewControllerCollectionViewCell.swift; sourceTree = "<group>"; };
-		DD8468E72180708500506645 /* SettingsViewControllerCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewControllerCollectionViewCell.xib; sourceTree = "<group>"; };
+		DDC61C0721807378006CD3DC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DDC61C0821807378006CD3DC /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		DDC61C0B2180739C006CD3DC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = settings/SettingsViewController/Settings.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +154,8 @@
 		DD8468D821806EF200506645 /* SettingsViewController */ = {
 			isa = PBXGroup;
 			children = (
-				DD8468E62180708500506645 /* SettingsViewControllerCollectionViewCell.swift */,
-				DD8468E72180708500506645 /* SettingsViewControllerCollectionViewCell.xib */,
+				DDC61C0721807378006CD3DC /* SettingsViewController.swift */,
+				DDC61C0821807378006CD3DC /* SettingsViewController.xib */,
 			);
 			path = SettingsViewController;
 			sourceTree = "<group>";
@@ -161,6 +163,7 @@
 		DD8468D921806F5B00506645 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
+				DDC61C0B2180739C006CD3DC /* Settings.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -288,8 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD8468E12180700200506645 /* PickerViewCell.xib in Resources */,
+				DDC61C0A21807378006CD3DC /* SettingsViewController.xib in Resources */,
 				DD8468B421806DDE00506645 /* LaunchScreen.storyboard in Resources */,
-				DD8468E92180708500506645 /* SettingsViewControllerCollectionViewCell.xib in Resources */,
 				DD8468B121806DDE00506645 /* Assets.xcassets in Resources */,
 				DD8468E52180703300506645 /* OtherSettingsViewCell.xib in Resources */,
 				DD8468AF21806DDD00506645 /* Main.storyboard in Resources */,
@@ -317,11 +320,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC61C0C2180739C006CD3DC /* Settings.swift in Sources */,
 				DD8468E42180703300506645 /* OtherSettingsViewCell.swift in Sources */,
 				DD8468AC21806DDD00506645 /* ViewController.swift in Sources */,
 				DD8468AA21806DDD00506645 /* AppDelegate.swift in Sources */,
+				DDC61C0921807378006CD3DC /* SettingsViewController.swift in Sources */,
 				DD8468E02180700200506645 /* PickerViewCell.swift in Sources */,
-				DD8468E82180708500506645 /* SettingsViewControllerCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
